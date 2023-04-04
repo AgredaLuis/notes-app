@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <main id="app">
-      <BrowserRouter>
+      <BrowserRouter basename="/notes-app">
         <Routes>
           <Route path="/" element={<Note notes={notes}/>}></Route>
           <Route path="/create-note" element={<CreateNote setNotes={setNotes}/>} />
